@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutStyle"
+    tools:context=".History"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_height="234dp"
+                android:paddingVertical="80dp"
+                android:text="@string/historyBill"
+                android:textSize="50sp"></TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bListaFurnizori"
+        android:onClick="showProvidersList"
+        android:text="@string/providerList"
+        android:textAlignment="center"></Button>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvHistory">
+
+            </ListView>
+
+
+</LinearLayout>

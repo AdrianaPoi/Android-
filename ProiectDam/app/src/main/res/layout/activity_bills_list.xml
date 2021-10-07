@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutStyle"
+    tools:context=".BillsList">
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="100dp"
+                  android:layout_height="42dp"
+                  android:layout_gravity="right"
+                  android:id="@+id/tvUserrrname"
+                  ></TextView>
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_height="170dp"
+                android:paddingVertical="80px"
+                android:text="@string/billList"
+                android:textSize="50sp"></TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bIstoric"
+                android:text="@string/historyBill"
+                android:textAlignment="center">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bArataLista"
+                android:text="@string/showBills"
+                android:onClick="showList"
+                android:textAlignment="center"></Button>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <ListView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:choiceMode="multipleChoice"
+                      android:nestedScrollingEnabled="true"
+                      android:id="@+id/listView"  >
+                  </ListView>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/question2"
+                      android:textAlignment="center"
+                      android:textSize="19dp"
+                      android:textStyle="bold"></TextView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tvSignUp"
+                      android:text="@string/clickHere"
+                      android:textAlignment="center"
+                      android:onClick="showDetails"
+                      android:textSize="20dp"
+                      android:textStyle="bold"
+                      android:textColor="#0089BA"></TextView>
+
+              </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:text="@string/btnplus"
+                android:textStyle="bold"
+                android:layout_marginTop="170dp"
+                android:id="@+id/btnAddBill"
+                android:layout_gravity="center"
+                android:textSize="60sp"
+                android:textColor="	#228B22">
+
+            </Button>
+
+          </LinearLayout>
+
+      </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+
+

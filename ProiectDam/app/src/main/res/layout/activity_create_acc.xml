@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutStyle"
+    tools:context=".CreateAcc">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:background="@drawable/fundal">
+
+    <TextView
+        android:layout_height="190dp"
+        style="@style/textViewStyle"
+        android:paddingVertical="70dp"
+        android:text="@string/createAcc"
+        android:textSize="50sp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/firstName"
+        android:textSize="30sp"
+        android:paddingLeft="20dp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFName"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lastName"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/etLName"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/email"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/etEmail"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/birthdate"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDate"
+            android:hint="Select date"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"></TextView>
+
+    </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="@string/username"
+                 android:textSize="30sp"
+                 android:layout_marginTop="10dp"
+                 android:paddingLeft="20dp"></TextView>
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="7dp"
+                 android:id="@+id/etUser"></EditText>
+
+         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/password"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/etPassword"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/confirmPass"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/etConfPass"></EditText>
+
+    </LinearLayout>
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp">
+
+        <Button
+            style="@style/buttonStyle"
+            android:id="@+id/bCreareCont"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="createAcc"
+            android:text="@string/createAcc"></Button>
+             <Button
+                 style="@style/buttonStyle"
+                 android:id="@+id/bCancel"
+                 android:layout_marginRight="30dp"
+                 android:layout_alignParentRight="true"
+                 android:onClick="cancel"
+                 android:text="@string/cancel"></Button>
+         </RelativeLayout>
+
+     </LinearLayout>
+     </ScrollView>
+</LinearLayout>
+
